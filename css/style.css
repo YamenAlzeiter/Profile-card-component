@@ -15,6 +15,7 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   display: flex;
   font-family: "Kumbh Sans";
@@ -56,12 +57,15 @@ cite {
   color: var(--dark-gray);
   letter-spacing: 0.2rem;
 }
+
+/*blocks*/
 .container {
   text-align: center;
   position: absolute;
   background: #fff;
   border-radius: 1rem;
   overflow: hidden;
+  width: min-content;
 }
 .profile {
   position: relative;
@@ -70,8 +74,6 @@ cite {
 .img-profile {
   border-radius: 100%;
   border: 0.5rem solid #fff;
-}
-.footer {
 }
 .footer::before {
   content: "";
@@ -85,7 +87,11 @@ cite {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  list-style: none;
 }
 
 @media screen and (max-width: 375px) {
+  body {
+    background-position: bottom 40vh right 50vw, top 40vh left 50vw;
+  }
 }
